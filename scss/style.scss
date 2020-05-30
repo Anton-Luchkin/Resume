@@ -1,0 +1,290 @@
+@import "_reset";
+@import "_fonts";
+
+body {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #595959;
+}
+
+.wrapper {
+    display: flex;
+    width: 1230px;
+    height: 1345px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin: 40px auto;
+}
+
+// <!-- ASIDE BLOCK -->
+
+.contacts-and-skills {
+    width: 370px;
+    height: 1345px;
+    background-color: #1e2939;
+    padding-top: 40px;
+
+    // <!-- Foto -->
+    &__foto {
+        max-width: 370px;
+        max-height: 495px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__section-title {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+// <!-- Contacts -->
+.contacts {
+    padding: 0px 0px 0px 40px;
+    margin: 0px 0px 40px 0px;
+
+    // <!-- Phone -->
+    &__item {
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    &__contact {
+        opacity: 0.5;
+        color: #ffffff;
+        line-height: 24px;
+        text-transform: none;
+        font-weight: 400;
+        margin: 0px 0px 0px 10px;
+    }
+    // <!-- E-mail -->
+
+    &__contact--link {
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+            opacity: 1;
+            color: #ffffff;
+        }
+    }
+
+    &__social-box {
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        margin: 10px 0px 0px 0px;
+    }
+    &__social-item {
+        max-width: 30px;
+        max-height: 30px;
+        & img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }
+}
+//<!-- Tech Skils / Soft Skils -->
+.skils {
+    padding: 0px 0px 0px 40px;
+    margin: 0px 0px 40px 0px;
+
+    &__item {
+        color: #ffffff;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background-image: url(../img/elips_2.png);
+            margin: 0px 10px 0px 0px;
+            vertical-align: middle;
+        }
+    }
+}
+
+// <!-- EXPERIENCE BLOCK -->
+.about-worck-experience {
+    width: 910px;
+    height: 1345px;
+    margin: 0px 0px 0px 0px;
+    padding: 110px 20px 0px 90px;
+}
+
+// <!-- Name & position -->
+.about {
+    margin: 0px 0px 60px 0px;
+    &__position {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
+
+    &__name {
+        color: #000000;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 89px;
+    }
+
+    &__me {
+        width: 410px;
+        color: #595959;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        text-align: justify;
+    }
+
+    &__section-title {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+// <!-- My projects -->
+.projects {
+    margin: 0px 0px 50px 0px;
+
+    &__list {
+        list-style-type: none;
+        counter-reset: num;
+    }
+
+    &__item {
+        list-style: none;
+        & a {
+            color: #595959;
+            &:hover {
+                color: #000000;
+            }
+        }
+
+        &::before {
+            content: counter(num) ".";
+            counter-increment: num;
+            display: inline-block;
+            color: #000000;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        & b {
+            color: #000000;
+            font-family: "Montserrat";
+            font-weight: 700;
+            letter-spacing: 0.42px;
+        }
+    }
+
+    &__language {
+        color: #595959;
+        line-height: 24px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 130px;
+            height: 1px;
+            background-image: url(../img/line.png);
+            vertical-align: bottom;
+            margin: 0px 10px 0px 0px;
+        }
+    }
+
+    &__link {
+        color: #595959;
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+
+// <!-- Worck experience -->
+.worck-experience {
+    margin: 0px 0px 50px 0px;
+    &__position:not(:last-of-type) {
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__position-title {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        margin: 0px 0px 10px 0px;
+        & span {
+            color: #ff6b08;
+        }
+    }
+
+    &__tasks-list {
+        list-style-type: none;
+    }
+
+    &__tasks-item {
+        color: #595959;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background-image: url(../img/elips_1.png);
+            margin: 0px 10px 0px 0px;
+            vertical-align: middle;
+        }
+    }
+}
+.period-box {
+    &__item {
+        color: #a8a8a8;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.36px;
+    }
+
+    & :first-child::after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 14px;
+        background-color: #000000;
+        background-image: url(../img/line_2.png);
+        margin: 0px 10px 0px 10px;
+        vertical-align: middle;
+    }
+}
+
+// <!-- Education -->
+.education {
+    &__university {
+        color: #ff6b08;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__specialty {
+        color: #000000;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        margin: 0px 0px 15px 0px;
+    }
+}

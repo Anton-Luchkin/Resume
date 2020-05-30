@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #595959;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1230px;
+  height: 1345px;
+  -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  margin: 40px auto;
+}
+
+.contacts-and-skills {
+  width: 370px;
+  height: 1345px;
+  background-color: #1e2939;
+  padding-top: 40px;
+}
+
+.contacts-and-skills__foto {
+  max-width: 370px;
+  max-height: 495px;
+  margin: 0px 0px 40px 0px;
+}
+
+.contacts-and-skills__section-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px 0px 15px 0px;
+}
+
+.contacts {
+  padding: 0px 0px 0px 40px;
+  margin: 0px 0px 40px 0px;
+}
+
+.contacts__item {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.contacts__contact {
+  opacity: 0.5;
+  color: #ffffff;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: 400;
+  margin: 0px 0px 0px 10px;
+}
+
+.contacts__contact--link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contacts__contact--link:hover {
+  text-decoration: underline;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.contacts__social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+  margin: 10px 0px 0px 0px;
+}
+
+.contacts__social-item {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.contacts__social-item img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.skils {
+  padding: 0px 0px 0px 40px;
+  margin: 0px 0px 40px 0px;
+}
+
+.skils__item {
+  color: #ffffff;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.skils__item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-image: url(../img/elips_2.png);
+  margin: 0px 10px 0px 0px;
+  vertical-align: middle;
+}
+
+.about-worck-experience {
+  width: 910px;
+  height: 1345px;
+  margin: 0px 0px 0px 0px;
+  padding: 110px 20px 0px 90px;
+}
+
+.about {
+  margin: 0px 0px 60px 0px;
+}
+
+.about__position {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.about__name {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+}
+
+.about__me {
+  width: 410px;
+  color: #595959;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-align: justify;
+}
+
+.about__section-title {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px 0px 15px 0px;
+}
+
+.projects {
+  margin: 0px 0px 50px 0px;
+}
+
+.projects__list {
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.projects__item {
+  list-style: none;
+}
+
+.projects__item a {
+  color: #595959;
+}
+
+.projects__item a:hover {
+  color: #000000;
+}
+
+.projects__item::before {
+  content: counter(num) ".";
+  counter-increment: num;
+  display: inline-block;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin: 0px 10px 0px 0px;
+}
+
+.projects__item b {
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+
+.projects__language {
+  color: #595959;
+  line-height: 24px;
+}
+
+.projects__language::before {
+  content: "";
+  display: inline-block;
+  width: 130px;
+  height: 1px;
+  background-image: url(../img/line.png);
+  vertical-align: bottom;
+  margin: 0px 10px 0px 0px;
+}
+
+.projects__link {
+  color: #595959;
+}
+
+.projects__link:hover {
+  color: #000000;
+}
+
+.worck-experience {
+  margin: 0px 0px 50px 0px;
+}
+
+.worck-experience__position:not(:last-of-type) {
+  margin: 0px 0px 20px 0px;
+}
+
+.worck-experience__position-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin: 0px 0px 10px 0px;
+}
+
+.worck-experience__position-title span {
+  color: #ff6b08;
+}
+
+.worck-experience__tasks-list {
+  list-style-type: none;
+}
+
+.worck-experience__tasks-item {
+  color: #595959;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.worck-experience__tasks-item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-image: url(../img/elips_1.png);
+  margin: 0px 10px 0px 0px;
+  vertical-align: middle;
+}
+
+.period-box__item {
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+}
+
+.period-box :first-child::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #000000;
+  background-image: url(../img/line_2.png);
+  margin: 0px 10px 0px 10px;
+  vertical-align: middle;
+}
+
+.education__university {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin: 0px 0px 15px 0px;
+}
+
+.education__specialty {
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin: 0px 0px 15px 0px;
+}
