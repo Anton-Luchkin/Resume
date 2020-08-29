@@ -1,0 +1,23 @@
+// <!-- Education asside-->
+.education-asside {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &__university {
+    color: #ff6b08;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  &__specialty {
+    color: #b1adad;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin: 0px 0px 15px 0px;
+  }
+}

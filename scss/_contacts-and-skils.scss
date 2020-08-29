@@ -1,0 +1,48 @@
+.contacts-and-skills {
+  max-width: 370px;
+  background-color: #1e2939;
+  padding-top: 40px;
+
+  @include for-size(tablet-portrait-down) {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 15px;
+  }
+
+  &__foto {
+    max-width: 370px;
+    margin: 0px 0px 40px 0px;
+
+    @include for-size(tablet-portrait-down) {
+      display: flex;
+      max-width: 100%;
+      margin: 0px 0px 40px 0px;
+    }
+
+    @include for-size(phone) {
+      flex-direction: column;
+    }
+
+    &-img {
+      max-width: 370px;
+
+      @include for-size(tablet-portrait-down) {
+        max-width: 275px;
+        margin: 0 auto;
+      }
+
+      @include for-size(phone) {
+        margin-bottom: 25px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__section-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+}

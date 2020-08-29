@@ -1,0 +1,22 @@
+.projects-asside {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.projects-asside__item {
+  margin-bottom: 15px;
+}
+
+.projects-asside__link {
+  color: #ff6b08;
+  margin-right: 15px;
+}
+
+.projects-asside__language {
+  color: #ffffff;
+
+  @include for-size(phone) {
+    display: none;
+  }
+}

@@ -96,29 +96,87 @@ body {
   color: #595959;
 }
 
+@media (max-width: 767px) {
+  body {
+    background-color: #1e2939;
+  }
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1230px;
-  height: 1345px;
+  max-width: 1230px;
   -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
   margin: 40px auto;
 }
 
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    background-color: #1e2939;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .contacts-and-skills {
-  width: 370px;
-  height: 1345px;
+  max-width: 370px;
   background-color: #1e2939;
   padding-top: 40px;
 }
 
+@media (max-width: 767px) {
+  .contacts-and-skills {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 15px;
+  }
+}
+
 .contacts-and-skills__foto {
   max-width: 370px;
-  max-height: 495px;
   margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .contacts-and-skills__foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts-and-skills__foto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts-and-skills__foto-img {
+  max-width: 370px;
+}
+
+@media (max-width: 767px) {
+  .contacts-and-skills__foto-img {
+    max-width: 275px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts-and-skills__foto-img {
+    margin-bottom: 25px;
+    max-width: 200px;
+  }
 }
 
 .contacts-and-skills__section-title {
@@ -129,9 +187,49 @@ body {
   margin: 0px 0px 15px 0px;
 }
 
+.about-for-mobile {
+  margin: 0px 0px 0px 20px;
+}
+
+@media (min-width: 768px) {
+  .about-for-mobile {
+    display: none;
+  }
+}
+
+.about-for-mobile__position {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.42px;
+  margin-bottom: 20px;
+}
+
+.about-for-mobile__name {
+  color: #ff6b08;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .about-for-mobile__name {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
 .contacts {
   padding: 0px 0px 0px 40px;
   margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item {
@@ -167,7 +265,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 200px;
+  max-width: 200px;
   margin: 10px 0px 0px 0px;
 }
 
@@ -181,9 +279,70 @@ body {
   max-height: 30px;
 }
 
+@media (min-width: 768px) {
+  .contacts-for-mobile {
+    display: none;
+  }
+}
+
+.contacts-for-mobile__item {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.contacts-for-mobile__contact {
+  opacity: 0.5;
+  color: #ffffff;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: 400;
+  margin: 0px 0px 0px 10px;
+}
+
+.contacts-for-mobile__contact--link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contacts-for-mobile__contact--link:hover {
+  text-decoration: underline;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.contacts-for-mobile__social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+
+.contacts-for-mobile__social-item {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.contacts-for-mobile__social-item img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
 .skils {
   padding: 0px 0px 0px 40px;
   margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .skils {
+    margin: 0px 0px 40px 20px;
+    padding: 0;
+  }
 }
 
 .skils__item {
@@ -203,22 +362,104 @@ body {
 }
 
 .about-worck-experience {
-  width: 910px;
+  max-width: 910px;
   height: 1345px;
   margin: 0px 0px 0px 0px;
   padding: 110px 20px 0px 90px;
+}
+
+@media (max-width: 991px) {
+  .about-worck-experience {
+    padding: 30px 10px 0px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-worck-experience {
+    display: none;
+  }
+}
+
+.worck-experience {
+  margin: 0px 0px 50px 0px;
+}
+
+.worck-experience__position:not(:last-of-type) {
+  margin: 0px 0px 20px 0px;
+}
+
+.worck-experience__position-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin: 0px 0px 10px 0px;
+}
+
+.worck-experience__position-title span {
+  color: #ff6b08;
+}
+
+.worck-experience__tasks-list {
+  list-style-type: none;
+}
+
+.worck-experience__tasks-item {
+  color: #595959;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.worck-experience__tasks-item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-image: url(../img/elips_1.png);
+  margin: 0px 10px 0px 0px;
+  vertical-align: middle;
+}
+
+.period-box {
+  margin-bottom: 15px;
+}
+
+.period-box__item {
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+}
+
+.period-box :first-child::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #000000;
+  background-image: url(../img/line_2.png);
+  margin: 0px 10px 0px 10px;
+  vertical-align: middle;
 }
 
 .about {
   margin: 0px 0px 60px 0px;
 }
 
-.about__position {
+.about__position, .about__section-title {
   color: #000000;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.42px;
+}
+
+@media (max-width: 991px) {
+  .about {
+    margin: 0px 0px 30px 0px;
+  }
 }
 
 .about__name {
@@ -228,23 +469,12 @@ body {
   line-height: 89px;
 }
 
-.about__me {
-  width: 410px;
-  color: #595959;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-align: justify;
-}
-
 .about__section-title {
-  color: #000000;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
   margin: 0px 0px 15px 0px;
 }
 
 .projects {
+  max-width: 750px;
   margin: 0px 0px 50px 0px;
 }
 
@@ -291,11 +521,17 @@ body {
 .projects__language::before {
   content: "";
   display: inline-block;
-  width: 130px;
+  width: 75px;
   height: 1px;
   background-image: url(../img/line.png);
   vertical-align: bottom;
   margin: 0px 10px 0px 0px;
+}
+
+@media (max-width: 991px) {
+  .projects__language {
+    display: none;
+  }
 }
 
 .projects__link {
@@ -306,16 +542,54 @@ body {
   color: #000000;
 }
 
-.worck-experience {
+@media (min-width: 768px) {
+  .projects-asside {
+    display: none;
+  }
+}
+
+.projects-asside__item {
+  margin-bottom: 15px;
+}
+
+.projects-asside__link {
+  color: #ff6b08;
+  margin-right: 15px;
+}
+
+.projects-asside__language {
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .projects-asside__language {
+    display: none;
+  }
+}
+
+.worck-experience-asside {
   margin: 0px 0px 50px 0px;
 }
 
-.worck-experience__position:not(:last-of-type) {
+@media (min-width: 768px) {
+  .worck-experience-asside {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .worck-experience-asside {
+    margin: 0px 0px 40px 20px;
+    padding: 0;
+  }
+}
+
+.worck-experience-asside__position:not(:last-of-type) {
   margin: 0px 0px 20px 0px;
 }
 
-.worck-experience__position-title {
-  color: #000000;
+.worck-experience-asside__position-title {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -323,22 +597,22 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
-.worck-experience__position-title span {
+.worck-experience-asside__position-title span {
   color: #ff6b08;
 }
 
-.worck-experience__tasks-list {
+.worck-experience-asside__tasks-list {
   list-style-type: none;
 }
 
-.worck-experience__tasks-item {
-  color: #595959;
+.worck-experience-asside__tasks-item {
+  color: #b1adad;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
 
-.worck-experience__tasks-item::before {
+.worck-experience-asside__tasks-item::before {
   content: "";
   display: inline-block;
   width: 4px;
@@ -346,6 +620,10 @@ body {
   background-image: url(../img/elips_1.png);
   margin: 0px 10px 0px 0px;
   vertical-align: middle;
+}
+
+.worck-experience__list li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .period-box__item {
@@ -366,6 +644,29 @@ body {
   vertical-align: middle;
 }
 
+@media (min-width: 768px) {
+  .education-asside {
+    display: none;
+  }
+}
+
+.education-asside__university {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin: 0px 0px 15px 0px;
+}
+
+.education-asside__specialty {
+  color: #b1adad;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin: 0px 0px 15px 0px;
+}
+
 .education__university {
   color: #ff6b08;
   font-size: 16px;
@@ -381,4 +682,26 @@ body {
   line-height: 24px;
   letter-spacing: 0.42px;
   margin: 0px 0px 15px 0px;
+}
+
+.tech-skils__list,
+.soft-skils__list,
+.projects-asside__list,
+.worck-experience__list,
+.education-asside__list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tech-skils__list,
+  .soft-skils__list,
+  .projects-asside__list,
+  .worck-experience__list,
+  .education-asside__list {
+    display: block;
+  }
+}
+
+.show-list {
+  display: block;
 }

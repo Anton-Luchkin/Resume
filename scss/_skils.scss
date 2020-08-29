@@ -1,0 +1,25 @@
+//<!-- Tech Skils / Soft Skils -->
+.skils {
+  padding: 0px 0px 0px 40px;
+  margin: 0px 0px 40px 0px;
+
+  @include for-size(tablet-portrait-down) {
+    margin: 0px 0px 40px 20px;
+    padding: 0;
+  }
+
+  &__item {
+    color: #ffffff;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-image: url(../img/elips_2.png);
+      margin: 0px 10px 0px 0px;
+      vertical-align: middle;
+    }
+  }
+}

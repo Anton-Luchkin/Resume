@@ -1,0 +1,14 @@
+.tech-skils__list,
+.soft-skils__list,
+.projects-asside__list,
+.worck-experience__list,
+.education-asside__list {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.show-list {
+  display: block;
+}

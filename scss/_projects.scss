@@ -1,0 +1,63 @@
+// <!-- My projects -->
+.projects {
+  max-width: 750px;
+  margin: 0px 0px 50px 0px;
+
+  &__list {
+    list-style-type: none;
+    counter-reset: num;
+  }
+
+  &__item {
+    list-style: none;
+    & a {
+      color: #595959;
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    &::before {
+      content: counter(num) ".";
+      counter-increment: num;
+      display: inline-block;
+      color: #000000;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+      margin: 0px 10px 0px 0px;
+    }
+
+    & b {
+      color: #000000;
+      font-family: "Montserrat";
+      font-weight: 700;
+      letter-spacing: 0.42px;
+    }
+  }
+
+  &__language {
+    color: #595959;
+    line-height: 24px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 1px;
+      background-image: url(../img/line.png);
+      vertical-align: bottom;
+      margin: 0px 10px 0px 0px;
+    }
+
+    @include for-size(tablet-landscape-down) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: #595959;
+    &:hover {
+      color: #000000;
+    }
+  }
+}

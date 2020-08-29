@@ -1,0 +1,32 @@
+// .about-for-mobile
+.about-for-mobile {
+  margin: 0px 0px 0px 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  // .about-for-mobile__position
+  &__position {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.42px;
+    margin-bottom: 20px;
+  }
+
+  // .about-for-mobile__name
+  &__name {
+    color: #ff6b08;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+
+    @include for-size(phone) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}

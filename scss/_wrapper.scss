@@ -1,0 +1,24 @@
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #595959;
+
+  @include for-size(tablet-portrait-down) {
+    background-color: #1e2939;
+  }
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1230px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  margin: 40px auto;
+
+  @include for-size(tablet-portrait-down) {
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    background-color: #1e2939;
+    box-shadow: none;
+  }
+}
